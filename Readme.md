@@ -5,9 +5,10 @@
 `th-react-cli init`
 ----
 input template name: react
-input your projectName: 
-and wait……
-successful!
+----
+input your projectName:
+----
+and wait…… successful!
 ----
 `cd yourProject`
 ----
