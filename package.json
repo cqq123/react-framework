@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "norice server -p 3004",
-    "deploy": "NODE_ENV=production norice deploy",
-    "build": "rm -rf dist && webpack --config webpack.prod.js"
+    "deploytest": "cross-env NODE_ENV=production node ./deploy/deploy.js",
+    "build": "rm -rf dist && webpack --config webpack.prod.js",
+    "tar": "tar -cf dist.tar dist",
+    "deploy": "npm run build && npm run tar"
   },
   "author": "chenqiaoqiao",
   "license": "ISC",
@@ -49,6 +51,7 @@
     "@babel/polyfill": "^7.11.5",
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
+    "chalk": "^4.1.0",
     "chroma-js": "^2.1.0",
     "d3-array": "^2.8.0",
     "d3-scale": "^3.2.3",
@@ -56,12 +59,14 @@
     "dayjs": "^1.9.3",
     "emotion-normalize": "^10.1.0",
     "lodash": "^4.17.19",
+    "ora": "^5.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-spring": "^8.0.27",
     "react-style-proptype": "^3.2.2",
-    "resize-observer-polyfill": "^1.5.1"
+    "resize-observer-polyfill": "^1.5.1",
+    "scp2": "^0.5.0"
   }
 }
