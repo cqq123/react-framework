@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "norice server -p 3004",
-    "deploytest": "cross-env NODE_ENV=production node ./deploy/deploy.js",
     "build": "rm -rf dist && webpack --config webpack.prod.js",
-    "tar": "tar -cf dist.tar dist",
-    "deploy": "npm run build && npm run tar"
   },
   "author": "chenqiaoqiao",
   "license": "ISC",
@@ -66,7 +63,6 @@
     "react-router-dom": "^5.2.0",
     "react-spring": "^8.0.27",
     "react-style-proptype": "^3.2.2",
-    "resize-observer-polyfill": "^1.5.1",
-    "scp2": "^0.5.0"
+    "resize-observer-polyfill": "^1.5.1"
   }
 }
