@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "norice server -p 3004",
-    "build": "rm -rf dist && webpack --config webpack.prod.js",
+    "build": "rm -rf dist && webpack --config webpack.prod.js"
   },
   "author": "chenqiaoqiao",
   "license": "ISC",
