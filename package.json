@@ -4,7 +4,7 @@
   "description": "react framework",
   "main": "index.js",
   "scripts": {
-    "dev": "norice server -p 3004",
+    "dev": "norice server -p 3008",
     "build": "rm -rf dist && webpack --config webpack.prod.js"
   },
   "author": "chenqiaoqiao",
