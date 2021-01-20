@@ -16,7 +16,7 @@ and wait…… successful!
 
 注意项目目录中 **norice.config.js .confont**
 ## icon工具讲解
-`npm install th-icon -g`
+`npm install tianhe_icon -g`
 
 修改.iconfont里的参数 参数为你iconfont 账号内容
 
